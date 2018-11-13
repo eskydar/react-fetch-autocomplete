@@ -1,0 +1,39 @@
+{
+  "name": "react-fetch-autcomplete",
+  "version": "0.0.1",
+  "description": "A controlled autocomplete component for react which can be used for any type of endpoint",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eskydar/react-fetch-autocomplete.git"
+  },
+  "keywords": [
+    "react-hook",
+    "react",
+    "autocomplete",
+    "controlled",
+    "component",
+    "fetch"
+  ],
+  "author": "Sebastiaan van Arkens (sebastiaan@vanarkens.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eskydar/react-fetch-autocomplete/issues"
+  },
+  "peerDependencies": {
+    "prop-types": "15.6.2",
+    "react": "^16.7.0-alpha.0 - next",
+    "react-dom": "^16.7.0-alpha.0 - next",
+    "use-debounce": "^0.0.6",
+    "uuid": "3.3.2"
+  },
+  "homepage": "https://github.com/eskydar/react-fetch-autocomplete#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
