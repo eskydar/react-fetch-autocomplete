@@ -31,7 +31,7 @@
   },
   "peerDependencies": {
     "react": "^16.7.0-alpha.0 - next",
-    "react-dom": "^16.7.0-alpha.0 - next",
+    "react-dom": "^16.7.0-alpha.0 - next"
   },
   "homepage": "https://github.com/eskydar/react-fetch-autocomplete#readme",
   "devDependencies": {
