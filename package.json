@@ -1,6 +1,6 @@
 {
   "name": "react-fetch-autocomplete",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A controlled autocomplete component for react which can be used for any type of endpoint",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,6 @@
     "use-debounce": "^0.0.6",
     "uuid": "3.3.2",
     "prop-types": "15.6.2"
-
   },
   "peerDependencies": {
     "react": "^16.7.0-alpha.0 - next",
