@@ -1,6 +1,6 @@
 {
   "name": "react-fetch-autocomplete",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A controlled autocomplete component for react which can be used for any type of endpoint",
   "main": "lib/index.js",
   "scripts": {
