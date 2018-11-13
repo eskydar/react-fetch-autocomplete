@@ -1,10 +1,10 @@
-#react-fetch-autocomplete
+# react-fetch-autocomplete
 The Autocomplete control for [React](https://reactjs.com).
 
 Demo on CodeSandbox:
 Demo page: 
 
-###Installation and usage
+### Installation and usage
 
 Install it with yarn:
 
@@ -77,7 +77,7 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-###Props
+### Props
 
 ReactFetchAutocomplete is a [Controlled Component]() which uses [Render Props]()
 
@@ -92,21 +92,23 @@ ReactFetchAutocomplete is a [Controlled Component]() which uses [Render Props]()
 | [`debounce`](#debounce)                 | number          |                    | 200      | A number in miliseconds representing the delay before a request gets fired after the last key gets pressed                    |
 
 <a name="value"></a>
-###value
+
+### value
 Type: `string`, Required: `true`
 
 <a name="children"></a>
-###children
+
+### children
 Type: `function`, Required: `true`
 This method handles the rendering of your element based on the state returned by `ReactFetchAutocomplete`. The function returns the following params in an object:
 
-######getInputProps
+###### getInputProps
 This function can be spread over the `<input />` element. As a parameter this function accepts an object which can be given any props the input element accepts (except for `value` and `onChange` as these are props for the `ReactFetchAutocomplete`).
 ```javascript
 <input {...getInputProps({placeholder: 'Your placeholder'})} />
 ```
 
-######getSuggestionItemProps
+###### getSuggestionItemProps
 This function can be spread over each suggestion item you render. As a parameter it expects the rendered suggestion and optionally an object which can be given any props you wish to be passed to the suggestion element.
 ```javascript
 suggestions.map(suggestion => (
@@ -114,17 +116,18 @@ suggestions.map(suggestion => (
 ))
 ```
 
-######loading
+###### loading
 This is a boolean that returns whether or not there is a request in progress.
 
-######error
+###### error
 This is a boolean that returns whether or not there has been an error.
 
-######suggestions
+###### suggestions
 This is an array of suggestion objecta that contain the data you passed down in the `suggestionParser`.
 
 <a name="suggestionParser"></a>
-###suggestionParser
+
+### suggestionParser
 Type: `function`, Required: `true`
 This is a function that receives the json response from the api endpoint and returns an array of objects which should contain at least a description.
 
@@ -136,7 +139,8 @@ const suggestionParser = data =>
   }));
 ```
 <a name="fetchUrl"></a>
-###fetchUrl
+
+### fetchUrl
 Type: `function|string`, Required: `true`
 function: A function that accepts the current searchString as param and returns a url to the endpoint.
 string: a plain string containing the url.
@@ -151,16 +155,19 @@ const fetchUrl = 'http://yourendpoint.com/';
 ```
 
 <a name="onChange"></a>
-###onChange
+
+### onChange
 Type: `function`, Required: `false`
 An event handler which can be used to update the state with the search value.
 
 <a name="onSelect"></a>
-###onSelect
+
+### onSelect
 Type: `function`, Required: `false`
 An event handler which can be used to update the state incase a suggestion actually gets selected.
 
 <a name="debounce"></a>
-###debounce
+
+### debounce
 type: 'number', Required: `false`
 A number in miliseconds representing the delay before a request gets fired after the last key gets pressed.
