@@ -23,12 +23,15 @@
   "bugs": {
     "url": "https://github.com/eskydar/react-fetch-autocomplete/issues"
   },
+  "dependencies": {
+    "use-debounce": "^0.0.6",
+    "uuid": "3.3.2",
+    "prop-types": "15.6.2"
+
+  },
   "peerDependencies": {
-    "prop-types": "15.6.2",
     "react": "^16.7.0-alpha.0 - next",
     "react-dom": "^16.7.0-alpha.0 - next",
-    "use-debounce": "^0.0.6",
-    "uuid": "3.3.2"
   },
   "homepage": "https://github.com/eskydar/react-fetch-autocomplete#readme",
   "devDependencies": {
