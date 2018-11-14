@@ -1,8 +1,7 @@
 # react-fetch-autocomplete
 The Autocomplete control for [React](https://reactjs.com).
 
-Demo on CodeSandbox:
-Demo page: 
+Demo on [Codesandbox](https://codesandbox.io/s/p775x5vlm7)
 
 ### Installation and usage
 
@@ -100,6 +99,7 @@ Type: `string`, Required: `true`
 
 ### children
 Type: `function`, Required: `true`
+
 This method handles the rendering of your element based on the state returned by `ReactFetchAutocomplete`. The function returns the following params in an object:
 
 ###### getInputProps
@@ -129,6 +129,7 @@ This is an array of suggestion objecta that contain the data you passed down in 
 
 ### suggestionParser
 Type: `function`, Required: `true`
+
 This is a function that receives the json response from the api endpoint and returns an array of objects which should contain at least a description.
 
 ```javascript
@@ -142,6 +143,7 @@ const suggestionParser = data =>
 
 ### fetchUrl
 Type: `function|string`, Required: `true`
+
 function: A function that accepts the current searchString as param and returns a url to the endpoint.
 string: a plain string containing the url.
 
@@ -158,16 +160,19 @@ const fetchUrl = 'http://yourendpoint.com/';
 
 ### onChange
 Type: `function`, Required: `false`
+
 An event handler which can be used to update the state with the search value.
 
 <a name="onSelect"></a>
 
 ### onSelect
 Type: `function`, Required: `false`
+
 An event handler which can be used to update the state incase a suggestion actually gets selected.
 
 <a name="debounce"></a>
 
 ### debounce
 type: 'number', Required: `false`
+
 A number in miliseconds representing the delay before a request gets fired after the last key gets pressed.
