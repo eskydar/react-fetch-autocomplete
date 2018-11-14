@@ -140,7 +140,7 @@ const AnyAutocomplete = ({ children, value, onChange, onSelect, fetchUrl, sugges
 
   const getActiveSuggestionId = () => {
     const activeSuggestion = getActiveSuggestion();
-    return activeSuggestion ? `PlacesAutocomplete__suggestion-${activeSuggestion.key}` : null;
+    return activeSuggestion ? `ReactFetchAutocomplete__suggestion-${activeSuggestion.key}` : null;
   };
 
   const getSuggestionProps = (suggestion, options = {}) => ({
